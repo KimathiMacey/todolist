@@ -1,0 +1,100 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  background: #f7f9fc;
+  padding: 0 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+h2 {
+  text-align: center;
+  color: inherit;
+}
+
+.toggle-container {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.task-input {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"], select {
+  padding: 10px;
+  font-size: 14px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 14px;
+  margin: 5px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #007BFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+body.dark-mode li {
+  background: #1f1f1f;
+}
+
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 12px;
+  color: gray;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
+}
+
+.actions {
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.actions button {
+  padding: 5px;
+  font-size: 12px;
+}
+
+.high { border-left-color: red; }
+.medium { border-left-color: orange; }
+.low { border-left-color: green; }
